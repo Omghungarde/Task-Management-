@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    
+}
+.container {
+    margin-top: 20px;
+}
+.nav-tabs .nav-link {
+    color: #495057;
+    font-size: 20px;
+}
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+.btnfont{
+    font-size: 18px;
+}
+.task-table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.task-table thead {
+    background-color: #e9ecef;
+}
+.task-table th, .task-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.profile-img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+.add-task-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 18px;
+}
+.add-task-btn:hover {
+    background-color: #0056b3;
+}
+.card-header {
+    background-color: #e9ecef;
+    font-size: 22px;
+}
+.task-name{
+    font-size: 22px;
+    
+}
+.task-title, .task-details {
+    font-size: 22px;
+}
+.btnfont1{
+    font-size: 180px;
+}
+.task-text {
+    line-height: 1.2; /* Adjust line height reivew it */
+}
+.checkbox12{
+        width: 20px;
+        height: 20px;
+        accent-color: #007bff;
+    
+        cursor: pointer;
+}
+/* Ensure text truncation works */
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Ensure buttons stack on smaller screens */
+@media (max-width: 576px) {
+    .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .task-table th, .task-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .add-task-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

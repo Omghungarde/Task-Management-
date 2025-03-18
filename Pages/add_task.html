@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="../Style/add_task_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="modal-container">
+        
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Add Task</h4>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h6 class="section-title">Task Details</h6>
+                <div class="form-group">
+                    <label>Task Owner</label>
+                    <select class="form-control" id="task_owner">
+                        <option>Pooja Kulkarni</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                    <label>Assigned To</label>
+                    <input type="text" class="form-control" id="assigned_to" placeholder="Enter assignee name">
+                </div> -->
+                
+                <div class="form-group">
+                    <label>Task Name <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="task_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" id="description"></textarea>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Start Date</label>
+                        <input type="date" class="form-control" id="start_date">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Due Date</label>
+                        <input type="date" class="form-control" id="due_date">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Reminder</label>
+                    <input type="datetime-local" class="form-control" id="reminder">
+                </div>
+                
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select class="form-control" id="priority">
+                        <option>Low</option>
+                        <option>Moderate</option>
+                        <option>High</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Status <span class="required">*</span></label>
+                    <select class="form-control" id="status">
+                        <option>Open</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                    </select>
+                </div>
+                
+                <div class="form-buttons">
+                    <button class="btn btn-primary add-task-btn ms-auto" onclick="addTask(false)">Submit</button>
+                    <button class="btn btn-secondary" onclick="addTask(true)">Submit and New</button>
+                    <button class="btn btn-light" onclick="window.location.href='./index.html'">Cancel</button>
+                </div>
+                
+                
+                    
+            </div>
+                
+            
+        </div>
+    </div>
+<script type="module" src="../Script/add_task.js"></script>
+</body>
+</html>
